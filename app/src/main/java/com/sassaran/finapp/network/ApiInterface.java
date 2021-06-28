@@ -22,6 +22,4 @@ public interface ApiInterface {
     @POST("/loyaltypg/public/payment/irctc/initiate")
     Call<Void> callInitiator( @Field("encdata") String encData);
 
-
-
 }
