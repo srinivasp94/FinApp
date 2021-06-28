@@ -2,10 +2,16 @@ package com.sassaran.finapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.inspirenetz.netzapp.base.BaseActivity
+import com.sassaran.finapp.databinding.ActivityMainBinding
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+class MainActivity : BaseActivity<ActivityMainBinding>() {
+    override fun layoutRes(): Int {
+        return R.layout.activity_main
     }
+
+    override fun initialise() {
+        //do what ever needed like permissions/Api calls etc
+    }
+
 }
