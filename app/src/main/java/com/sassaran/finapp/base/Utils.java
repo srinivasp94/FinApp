@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.view.LayoutInflater;
@@ -187,5 +188,17 @@ public class Utils {
             sb.append(String.format("%02x", b));
         return sb.toString();
     }
+
+    public void changeActivity(Context context,Class<Activity> newActivityClass,boolean isFinish){
+
+        Intent intent = new Intent(context,newActivityClass);
+        context.startActivity(intent);
+        if (isFinish) {
+            ((Activity)context).finish();
+        }
+
+    }
+
+
 
 }

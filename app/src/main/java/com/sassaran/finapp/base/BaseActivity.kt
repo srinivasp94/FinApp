@@ -1,8 +1,9 @@
-package com.inspirenetz.netzapp.base
+package com.sassaran.finapp.base
 
 
 import android.app.Activity
 import android.content.Context
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.view.View
@@ -17,6 +18,7 @@ import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.sassaran.finapp.R
+import java.io.Serializable
 
 
 public abstract class BaseActivity<D : ViewDataBinding> : AppCompatActivity() {
@@ -109,6 +111,29 @@ public abstract class BaseActivity<D : ViewDataBinding> : AppCompatActivity() {
                 getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
             imm.hideSoftInputFromWindow(view.getWindowToken(), 0)
         }
+    }
+
+    open fun changeActivity(
+        activity: Activity,
+        newActivityClass: Class<Activity?>?,
+        isFinish: Boolean
+    ) {
+        val intent = Intent(activity, newActivityClass)
+        startActivity(intent)
+        if (isFinish) {
+          finish()
+        }
+    }
+
+    fun Activity.changeActivityWithAnimation(newActivityClass: Class<Activity>, enteringAnimation: Int, exitingAnimation: Int, extras: Map<String, Serializable>?=null) {
+        val intent = Intent(this , newActivityClass)
+
+        extras?.let { it.forEach{ pair -> intent.putExtra(pair.key, pair.value)} }
+
+        overridePendingTransition(enteringAnimation, exitingAnimation)
+
+        finish()
+        startActivity(intent)
     }
 
 }

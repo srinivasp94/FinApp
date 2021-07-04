@@ -5,7 +5,14 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgwithout_logo">
+    android:background="@drawable/bgwithoutlogo">
+
+  <ImageView
+      android:layout_width="@dimen/_80sdp"
+      android:layout_height="@dimen/_80sdp"
+      android:src="@drawable/logo2"
+      android:layout_gravity="center_horizontal"
+      android:layout_marginTop="@dimen/_20sdp"/>
 
     <Spinner
         android:layout_width="match_parent"
@@ -13,7 +20,23 @@
         android:layout_marginLeft="@dimen/_30sdp"
         android:layout_marginRight="@dimen/_30sdp"
         android:layout_marginTop="@dimen/_20sdp"
+        android:visibility="gone"
+
         />
+
+    <EditText
+    android:hint="Country Code(+91)"
+    android:textColorHint="@color/black"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp"
+    android:background="@drawable/edittext_bg"
+    android:paddingLeft="@dimen/_5sdp"
+    android:layout_marginRight="@dimen/_30sdp"
+    android:layout_marginLeft="@dimen/_30sdp"
+    android:layout_marginTop="@dimen/_20sdp"/>
+
+
+
 
     <EditText
         android:hint="Mobile Number"
@@ -26,7 +49,13 @@
         android:layout_marginLeft="@dimen/_30sdp"
         android:layout_marginTop="@dimen/_10sdp"/>
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp">
+
     <EditText
+        android:id="@+id/otp_edtxt"
         android:hint="OTP"
         android:textColorHint="@color/black"
         android:layout_width="match_parent"
@@ -35,18 +64,31 @@
         android:layout_marginRight="@dimen/_30sdp"
         android:layout_marginLeft="@dimen/_30sdp"
         android:paddingLeft="@dimen/_5sdp"
-        android:layout_marginTop="@dimen/_10sdp"/>
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend OTP"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/otp_edtxt"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_10sdp"/>
+
+    </RelativeLayout>
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_30sdp"
+        android:layout_height="@dimen/_40sdp"
         android:text="get otp"
         android:textSize="@dimen/_13sdp"
         android:textStyle="bold"
         android:layout_marginTop="@dimen/_30sdp"
-        android:layout_marginLeft="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginRight="@dimen/_20sdp"
-        android:padding="@dimen/_3sdp"/>
+        android:padding="@dimen/_5sdp"
+        android:background="@drawable/txtview_bg"
+        />
 
 </LinearLayout>
 </layout>

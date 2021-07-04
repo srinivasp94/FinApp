@@ -1,8 +1,6 @@
 package com.sassaran.finapp
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import com.inspirenetz.netzapp.base.BaseActivity
+import com.sassaran.finapp.base.BaseActivity
 import com.sassaran.finapp.databinding.ActivityMainBinding
 
 class MainActivity : BaseActivity<ActivityMainBinding>() {

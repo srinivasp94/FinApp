@@ -17,7 +17,7 @@
             android:backgroundTintMode="multiply"
             android:progressBackgroundTint="@color/black"
             android:progressBackgroundTintMode="multiply"
-            android:progressTint="@color/purple_500"
+            android:progressTint="@color/colorprimary"
             android:scrollbars="none" />
 
         <androidx.appcompat.widget.AppCompatTextView
