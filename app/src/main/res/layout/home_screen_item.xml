@@ -3,8 +3,7 @@
     android:layout_width="@dimen/_90sdp"
     android:layout_height="@dimen/_110sdp"
     android:layout_margin="@dimen/_5sdp"
-    android:orientation="vertical"
-    >
+    android:orientation="vertical">
 
 
     <ImageView
@@ -13,21 +12,19 @@
         android:layout_height="@dimen/_20sdp"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/_20sdp"
-        android:src="@drawable/signout"
-        />
+        android:src="@drawable/signout" />
 
     <TextView
         android:id="@+id/grid_txtview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/_13sdp"
-        android:layout_centerHorizontal="true"
         android:layout_below="@id/grid_imgview"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/_30sdp"
         android:text="sign-out"
-        android:textStyle="bold"
         android:textAllCaps="true"
-        />
+        android:textSize="@dimen/_13sdp"
+        android:textStyle="bold" />
 
 
 </RelativeLayout>

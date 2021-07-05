@@ -113,9 +113,14 @@ public abstract class BaseActivity<D : ViewDataBinding> : AppCompatActivity() {
         }
     }
 
+    open fun openActivity(calledActivity: Class<*>?) {
+        val myIntent = Intent(this, calledActivity)
+        this.startActivity(myIntent)
+    }
+
     open fun changeActivity(
-        activity: Activity,
-        newActivityClass: Class<Activity?>?,
+        activity: AppCompatActivity,
+        newActivityClass: Class<*>?,
         isFinish: Boolean
     ) {
         val intent = Intent(activity, newActivityClass)
@@ -125,7 +130,7 @@ public abstract class BaseActivity<D : ViewDataBinding> : AppCompatActivity() {
         }
     }
 
-    fun Activity.changeActivityWithAnimation(newActivityClass: Class<Activity>, enteringAnimation: Int, exitingAnimation: Int, extras: Map<String, Serializable>?=null) {
+    fun Activity.changeActivityWithAnimation(newActivityClass: Class<*>?, enteringAnimation: Int, exitingAnimation: Int, extras: Map<String, Serializable>?=null) {
         val intent = Intent(this , newActivityClass)
 
         extras?.let { it.forEach{ pair -> intent.putExtra(pair.key, pair.value)} }
