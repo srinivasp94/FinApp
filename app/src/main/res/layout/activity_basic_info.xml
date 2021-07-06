@@ -1,174 +1,180 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@drawable/bgwithoutlogo"
-    >
-    <include layout="@layout/header_layout"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:text="Basic Info"
-        android:textColor="@color/colorprimary"
-        android:textSize="@dimen/_15sdp"
-        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="@dimen/_10sdp">
+        android:layout_height="match_parent"
+        android:background="@drawable/bgwithoutlogo"
+        android:orientation="vertical">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginLeft="@dimen/_30sdp"
-            android:layout_marginRight="@dimen/_30sdp"
-            android:hint="Full Name"
-            android:paddingLeft="@dimen/_5sdp"
-            android:background="@drawable/edittext_bg"/>
+        <include layout="@layout/header_layout" />
 
-        <LinearLayout
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_30sdp"
-            android:layout_marginRight="@dimen/_30sdp"
-            android:orientation="horizontal"
-            android:weightSum="2"
-            android:layout_marginTop="@dimen/_10sdp">
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_marginRight="@dimen/_5sdp"
-                android:layout_weight="1"
-                android:hint="Select Gender"
-                android:paddingLeft="@dimen/_5sdp"
-
-                android:background="@drawable/edittext_bg"/>
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:layout_weight="1"
-                android:hint="Date of Birth"
-                android:paddingLeft="@dimen/_5sdp"
-
-                android:background="@drawable/edittext_bg"/>
-
-
-        </LinearLayout>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
-            android:layout_marginLeft="@dimen/_30sdp"
-            android:layout_marginRight="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_10sdp"
-            android:background="@drawable/edittext_bg"
-            android:hint="Employee Number"
-            android:paddingLeft="@dimen/_5sdp"
-            />
+            android:text="Basic Info"
+            android:textColor="@color/colorprimary"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_30sdp"
-            android:layout_marginRight="@dimen/_30sdp"
-            android:orientation="horizontal"
             android:layout_marginTop="@dimen/_10sdp"
-            android:weightSum="2">
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_marginRight="@dimen/_5sdp"
-                android:layout_weight="1"
-                android:hint="Net Monthly Income"
-                android:paddingLeft="@dimen/_5sdp"
-                android:background="@drawable/edittext_bg"/>
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="@dimen/_40sdp"
-                android:layout_marginLeft="@dimen/_5sdp"
-                android:layout_weight="1"
-                android:hint="Current EMIs"
-                android:paddingLeft="@dimen/_5sdp"
-                android:background="@drawable/edittext_bg"/>
-
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginLeft="@dimen/_10sdp"
-                android:layout_marginTop="@dimen/_10sdp"
-                android:gravity="center_horizontal"
-                android:text="Salary Mode"
-                android:textColor="#000"
-                android:textSize="@dimen/_18sdp"
-                android:textStyle="bold" />
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@drawable/edittext_bg"
+                android:hint="Full Name"
+                android:padding="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_5sdp" />
 
-            <RelativeLayout
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
 
-                <RadioGroup
-                    android:id="@+id/radioGender"
-                    android:layout_width="wrap_content"
+                <EditText
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_centerInParent="true">
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="Select Gender"
+                    android:padding="@dimen/_12sdp"
+                    android:paddingLeft="@dimen/_5sdp" />
 
-                    <RadioButton
-                        android:id="@+id/radiobank_credit"
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="Date of Birth"
+                    android:padding="@dimen/_12sdp"
+                    android:paddingLeft="@dimen/_5sdp" />
+
+
+            </LinearLayout>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:background="@drawable/edittext_bg"
+                android:hint="Employee Number"
+                android:padding="@dimen/_12sdp"
+                android:paddingLeft="@dimen/_5sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_30sdp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:maxEms="2"
+                    android:maxLines="2"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="Net Monthly Income"
+                    android:paddingLeft="@dimen/_5sdp"
+                    android:padding="@dimen/_12sdp"/>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_bg"
+                    android:hint="Current EMIs"
+                    android:padding="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_2sdp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:gravity="center_horizontal"
+                    android:text="Salary Mode"
+                    android:textColor="#000"
+                    android:textSize="@dimen/_18sdp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RadioGroup
+                        android:id="@+id/radioGender"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:checked="true"
-                        android:text="Bank Credit"
-                        android:buttonTint="@color/black"/>
+                        android:layout_centerInParent="true">
 
-                    <RadioButton
-                        android:id="@+id/radiocash"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Cash" />
-                </RadioGroup>
+                        <RadioButton
+                            android:id="@+id/radiobank_credit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:buttonTint="@color/black"
+                            android:checked="true"
+                            android:text="Bank Credit" />
 
-            </RelativeLayout>
+                        <RadioButton
+                            android:id="@+id/radiocash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cash" />
+                    </RadioGroup>
+
+                </RelativeLayout>
+            </LinearLayout>
+
         </LinearLayout>
 
+        <Button
+            android:id="@+id/proceed_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_50sdp"
+            android:background="@drawable/txtview_bg"
+            android:padding="@dimen/_5sdp"
+            android:text="proceed"
+            android:textAllCaps="true" />
+
+
     </LinearLayout>
-
-    <Button
-        android:id="@+id/proceed_btn"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_40sdp"
-        android:text="proceed"
-        android:textAllCaps="true"
-        android:layout_marginLeft="@dimen/_50sdp"
-        android:layout_marginRight="@dimen/_50sdp"
-        android:padding="@dimen/_5sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:background="@drawable/txtview_bg"/>
-
-
-</LinearLayout>
 </layout>

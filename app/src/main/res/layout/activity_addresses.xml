@@ -9,7 +9,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/bgwithoutlogo">
 
-    <include layout="@layout/header_layout"/>
+    <include layout="@layout/header_layout"
+        android:id="@+id/rootHeader"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -42,7 +43,8 @@
                 <ImageView
                     android:id="@+id/addr_img"
                     android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"/>
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_baseline_art_track_24"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -51,7 +53,8 @@
                     android:textSize="@dimen/_14sdp"
                     android:textColor="@color/black"
                     android:layout_toRightOf="@+id/addr_img"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/_3sdp"/>
 
 
             </RelativeLayout>
@@ -73,7 +76,8 @@
                 <ImageView
                     android:id="@+id/mail_img"
                     android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"/>
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_baseline_attach_email_24"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -82,7 +86,8 @@
                     android:textSize="@dimen/_14sdp"
                     android:textColor="@color/black"
                     android:layout_toRightOf="@+id/mail_img"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/_3sdp"/>
 
 
             </RelativeLayout>
@@ -95,7 +100,8 @@
                 <ImageView
                     android:id="@+id/call_img"
                     android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"/>
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/customerservice"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -103,7 +109,8 @@
                     android:text="info@gwiafrica.com"
                     android:textSize="@dimen/_14sdp"
                     android:layout_toRightOf="@+id/call_img"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/_3sdp"/>
 
 
             </RelativeLayout>
@@ -145,7 +152,8 @@
                 <ImageView
                     android:id="@+id/addr_img1"
                     android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"/>
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_baseline_art_track_24"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -154,7 +162,8 @@
                     android:textSize="@dimen/_14sdp"
                     android:textColor="@color/black"
                     android:layout_toRightOf="@+id/addr_img1"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/_3sdp"/>
 
 
             </RelativeLayout>
@@ -176,7 +185,8 @@
                 <ImageView
                     android:id="@+id/mail_img1"
                     android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"/>
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/ic_baseline_attach_email_24"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -185,7 +195,8 @@
                     android:textSize="@dimen/_14sdp"
                     android:textColor="@color/black"
                     android:layout_toRightOf="@+id/mail_img1"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/_3sdp"/>
 
 
             </RelativeLayout>
@@ -198,7 +209,8 @@
                 <ImageView
                     android:id="@+id/call_img1"
                     android:layout_width="@dimen/_20sdp"
-                    android:layout_height="@dimen/_20sdp"/>
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/customerservice"/>
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -206,7 +218,8 @@
                     android:text="info@gwiafrica.com"
                     android:textSize="@dimen/_14sdp"
                     android:layout_toRightOf="@+id/call_img1"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    android:layout_marginLeft="@dimen/_3sdp"/>
 
 
             </RelativeLayout>

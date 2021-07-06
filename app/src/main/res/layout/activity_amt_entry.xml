@@ -21,24 +21,26 @@
         android:orientation="vertical"
         android:layout_marginTop="@dimen/_10sdp">
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_marginRight="@dimen/_30sdp"
             android:hint="Amount"
             android:paddingLeft="@dimen/_5sdp"
+            android:padding="@dimen/_10sdp"
             android:background="@drawable/edittext_bg"/>
 
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_marginRight="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_10sdp"
             android:background="@drawable/edittext_bg"
             android:hint="Durations"
+            android:padding="@dimen/_10sdp"
             android:paddingLeft="@dimen/_5sdp"/>
 
 

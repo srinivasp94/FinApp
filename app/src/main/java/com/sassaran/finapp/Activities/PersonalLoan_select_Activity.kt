@@ -35,6 +35,24 @@ class PersonalLoan_select_Activity : BaseActivity<ActivityPersonalloanSelectBind
             R.id.personalloan_ll -> {
                 changeActivity(this,AmtEntry_Activity::class.java,false);
             }
+            R.id.homeloan_ll -> {
+                changeActivity(this,AmtEntry_Activity::class.java,false);
+            }
+            R.id.vehfin_ll -> {
+                changeActivity(this,AmtEntry_Activity::class.java,false);
+            }
+            R.id.payday_ll -> {
+                changeActivity(this,AmtEntry_Activity::class.java,false);
+            }
+            R.id.credit_ll -> {
+                changeActivity(this,AmtEntry_Activity::class.java,false);
+            }
+            R.id.debit_ll -> {
+                changeActivity(this,AmtEntry_Activity::class.java,false);
+            }
+            R.id.merchcredit_ll -> {
+                changeActivity(this,AmtEntry_Activity::class.java,false);
+            }
         }
     }
 }

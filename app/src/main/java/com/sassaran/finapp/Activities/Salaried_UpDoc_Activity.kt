@@ -14,5 +14,6 @@ class Salaried_UpDoc_Activity : BaseActivity<ActivityUploadDocumentBinding>() {
 
     override fun initialise() {
 
+        binding.
     }
 }

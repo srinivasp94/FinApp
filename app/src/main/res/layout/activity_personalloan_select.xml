@@ -30,7 +30,8 @@
             <LinearLayout
                 android:id="@+id/personalloan_ll"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -63,7 +64,8 @@
             <LinearLayout
                 android:id="@+id/homeloan_ll"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -96,7 +98,8 @@
             <LinearLayout
                 android:id="@+id/vehfin_ll"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
                 android:orientation="horizontal"
                 >
 
@@ -130,7 +133,8 @@
             <LinearLayout
                 android:id="@+id/payday_ll"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -163,7 +167,8 @@
             <LinearLayout
                 android:id="@+id/credit_ll"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -196,7 +201,8 @@
             <LinearLayout
                 android:id="@+id/debit_ll"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
                 android:orientation="horizontal">
 
                 <ImageView
@@ -229,7 +235,8 @@
             <LinearLayout
                 android:id="@+id/merchcredit_ll"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_50sdp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_12sdp"
                 android:orientation="horizontal">
 
                 <ImageView

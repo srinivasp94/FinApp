@@ -37,18 +37,20 @@
             android:orientation="horizontal"
             android:weightSum="2">
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_5sdp"
                 android:layout_weight="1"
                 android:background="@drawable/edittext_bg"
                 android:paddingLeft="@dimen/_5sdp"
                 android:hint="Martial Status" />
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_40sdp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_10sdp"
                 android:layout_marginLeft="@dimen/_5sdp"
                 android:layout_weight="1"
                 android:background="@drawable/edittext_bg"
@@ -59,9 +61,10 @@
 
         </LinearLayout>
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginRight="@dimen/_30sdp"
@@ -71,9 +74,10 @@
             />
 
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_marginRight="@dimen/_30sdp"
             android:background="@drawable/edittext_bg"
@@ -82,9 +86,10 @@
             android:paddingLeft="@dimen/_5sdp"
             />
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_marginRight="@dimen/_30sdp"
             android:background="@drawable/edittext_bg"
@@ -117,9 +122,10 @@
 
         </LinearLayout>
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_marginRight="@dimen/_30sdp"
             android:background="@drawable/edittext_bg"
@@ -128,9 +134,10 @@
             android:paddingLeft="@dimen/_5sdp"
             />
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_marginRight="@dimen/_30sdp"
             android:background="@drawable/edittext_bg"
