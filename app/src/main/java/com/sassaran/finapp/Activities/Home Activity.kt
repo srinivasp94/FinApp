@@ -1,25 +1,23 @@
 package com.sassaran.finapp.Activities
 
 import android.content.Intent
-import android.os.Bundle
 import android.view.View
-import android.widget.LinearLayout
-import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.navigation.NavigationView
 import com.sassaran.finapp.R
 import com.sassaran.finapp.base.BaseActivity
 import com.sassaran.finapp.base.GlobalRecyclerAdapter
 import com.sassaran.finapp.databinding.ActivityHomeScreenBinding
-import com.sassaran.finapp.databinding.DummyRecyclerItemBinding
 import com.sassaran.finapp.databinding.HomeScreenItemBinding
+
 
 class Home_Activity : BaseActivity<ActivityHomeScreenBinding>() {
 
 
     val textnames = ArrayList<String>()
+
     val images = ArrayList<Int>()
 
     override fun layoutRes(): Int {
@@ -28,16 +26,29 @@ class Home_Activity : BaseActivity<ActivityHomeScreenBinding>() {
 
     override fun initialise() {
 
+        val mDrawerLayout: DrawerLayout  =  findViewById(R.id.drawer_layout)
+
         val navigationView: NavigationView = findViewById(R.id.navigationView)
 
-        navigationView.setNavigationItemSelectedListener(this)
 
-        val loan_ll: LinearLayout = findViewById(R.id.loan_ll)
-        val account_ll: LinearLayout = findViewById(R.id.account_ll)
-        val payemi_ll: LinearLayout = findViewById(R.id.payemi_ll)
-        val products_ll: LinearLayout = findViewById(R.id.products_ll)
-        val custsrvc_ll: LinearLayout = findViewById(R.id.custsrvc_ll)
-        val drawer_layout: DrawerLayout = findViewById(R.id.drawer_layout)
+
+       binding.imgMenuIcon.setOnClickListener(object : View.OnClickListener {
+
+           override fun onClick(v: View?) {
+
+
+               if (mDrawerLayout.isDrawerVisible(GravityCompat.START)) {
+
+                   mDrawerLayout.closeDrawer(GravityCompat.START)
+
+               } else {
+                   mDrawerLayout.openDrawer(GravityCompat.START)
+               }
+           }
+
+       })
+
+        navigationView.setNavigationItemSelectedListener(this)
 
         textnames.add("Sign-Out ")
         textnames.add("Apply Now ")
