@@ -17,16 +17,16 @@ class SplashScreenActivity : BaseActivity<ActivitySplashScreenBinding>() {
     override fun initialise() {
 
         binding.disclaimerTv.setOnClickListener(View.OnClickListener {
-            changeActivity(this@SplashScreenActivity,DiscPolicyActivity::class.java,true);
+            changeActivity(this@SplashScreenActivity, DiscPolicyActivity::class.java, true);
 
         })
 
         Timer().schedule(object : TimerTask() {
             override fun run() {
-                changeActivity(this@SplashScreenActivity,LoginActivity::class.java,true);
+                changeActivity(this@SplashScreenActivity, LoginActivity::class.java, true);
 
             }
-        }, 5000)
+        }, 1500)
 
 
     }

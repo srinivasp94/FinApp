@@ -36,14 +36,13 @@ public class BaseApplication : Application() {
             .setLenient()
             .create()
 
-/*
         val retrofit: Retrofit = Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl("https://www.google.com")
             .addConverterFactory(GsonConverterFactory.create())
             .client(client)
             .build()
-*/
-//        apiClient = retrofit.create(ApiInterface::class.java)
+
+        apiClient = retrofit.create(ApiInterface::class.java)
 
         registerActivityLifecycleCallbacks(object : ActivityLifecycleCallbacks {
             override fun onActivityCreated(

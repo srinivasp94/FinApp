@@ -54,7 +54,7 @@ class Home_Activity : BaseActivity<ActivityHomeScreenBinding>() {
         images.add(R.drawable.location)
 
 
-        val manage = GridLayoutManager(this, 2);
+        val manage = GridLayoutManager(this, 3);
         binding.rvDummyText.layoutManager = manage
 
         val dummyitemAdapter: GlobalRecyclerAdapter<*, *> =
@@ -74,22 +74,22 @@ class Home_Activity : BaseActivity<ActivityHomeScreenBinding>() {
                     viewbinding.layoutRoot.setOnClickListener(object : View.OnClickListener {
                         override fun onClick(v: View?) {
 
-                            if (position == 1) {
+                            if (position == 0) {
 
-                            } else if (position == 2) {
+                            } else if (position == 1) {
                                 val intent = Intent(this@Home_Activity, Select_Activity::class.java)
                                 intent.putExtra("tag", "from_homeact")
                                 startActivity(intent)
 
-                            } else if (position == 3) {
+                            } else if (position == 2) {
 
-                            } else if (position == 4) {
+                            } else if (position == 3) {
 
                                 changeActivity(this@Home_Activity, AmtEntry_Activity::class.java, false)
 
-                            } else if (position == 5) {
+                            } else if (position == 4) {
 
-                            } else if (position == 6) {
+                            } else if (position == 5) {
                                 changeActivity(this@Home_Activity, Addresses_Activity::class.java, false)
                             }
                         }
