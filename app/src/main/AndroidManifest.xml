@@ -14,12 +14,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinApp"
         android:usesCleartextTraffic="true">
-
-        <activity android:name=".Activities.Basic_infoActivity"
-            android:screenOrientation="portrait">
-        </activity>
-
-        <activity android:name=".MainActivity"
+        <activity android:name=".Activities.AppStatusActivity"></activity>
+        <activity android:name=".Activities.DiscPolicyActivity" />
+        <activity
+            android:name=".Activities.DisclaimerActivity"
+            android:label="@string/title_activity_disclaimer"
+            android:theme="@style/Theme.FinApp.NoActionBar" />
+        <activity android:name=".Activities.SelfEmp_workinfo_Activity" />
+        <activity
+            android:name=".Activities.SplashScreenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +30,48 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Activities.Addresses_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.AmtEntry_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Basic_infoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.BussLoan_Select_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Home_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PersonalInfo_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.PersonalLoan_select_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Salaried_UpDoc_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Select_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SelfEmp_Basicinfo_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SelfEmp_UpDoc_Acitvity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.WorkInfo_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

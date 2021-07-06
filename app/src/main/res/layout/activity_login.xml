@@ -28,7 +28,7 @@
     android:hint="Country Code(+91)"
     android:textColorHint="@color/black"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_30sdp"
+    android:layout_height="@dimen/_40sdp"
     android:background="@drawable/edittext_bg"
     android:paddingLeft="@dimen/_5sdp"
     android:layout_marginRight="@dimen/_30sdp"
@@ -42,7 +42,7 @@
         android:hint="Mobile Number"
         android:textColorHint="@color/black"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_30sdp"
+        android:layout_height="@dimen/_40sdp"
         android:background="@drawable/edittext_bg"
         android:paddingLeft="@dimen/_5sdp"
         android:layout_marginRight="@dimen/_30sdp"
@@ -50,6 +50,7 @@
         android:layout_marginTop="@dimen/_10sdp"/>
 
     <RelativeLayout
+        android:id="@+id/otp_rl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10sdp">
@@ -59,7 +60,7 @@
         android:hint="OTP"
         android:textColorHint="@color/black"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_30sdp"
+        android:layout_height="@dimen/_40sdp"
         android:background="@drawable/edittext_bg"
         android:layout_marginRight="@dimen/_30sdp"
         android:layout_marginLeft="@dimen/_30sdp"
@@ -78,16 +79,27 @@
     </RelativeLayout>
 
     <Button
+        android:id="@+id/get_otpbtn"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_height="@dimen/_30sdp"
         android:text="get otp"
-        android:textSize="@dimen/_13sdp"
         android:textStyle="bold"
         android:layout_marginTop="@dimen/_30sdp"
         android:layout_marginLeft="@dimen/_20sdp"
         android:layout_marginRight="@dimen/_20sdp"
-        android:padding="@dimen/_5sdp"
         android:background="@drawable/txtview_bg"
+        />
+    <Button
+        android:id="@+id/verify_otpbtn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:text="verify otp"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/txtview_bg"
+        android:visibility="gone"
         />
 
 </LinearLayout>

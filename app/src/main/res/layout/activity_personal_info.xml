@@ -14,10 +14,10 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_30sdp"
         android:layout_marginTop="@dimen/_10sdp"
         android:text="Personal Info"
-        android:textColor="#000"
+        android:textColor="@color/colorprimary"
         android:textSize="@dimen/_15sdp"
         android:textStyle="bold" />
 
@@ -142,6 +142,7 @@
     </LinearLayout>
 
     <Button
+        android:id="@+id/proceed_btn"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
         android:layout_marginLeft="@dimen/_50sdp"

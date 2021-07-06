@@ -27,6 +27,7 @@
 
 
         <TextView
+            android:id="@+id/salary_tv"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp"
             android:text="Salaried"
@@ -43,6 +44,7 @@
             android:textAllCaps="true"/>
 
         <TextView
+            android:id="@+id/selfemp_tv"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp"
             android:text="Self-employed"

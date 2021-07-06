@@ -35,7 +35,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_30sdp"
                 android:background="@drawable/edittext_bg"
-                android:hint="Company Name"
+                android:hint="Business Name"
                 android:paddingLeft="@dimen/_5sdp" />
 
 
@@ -46,7 +46,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_30sdp"
                 android:background="@drawable/edittext_bg"
-                android:hint="Comapny Type"
+                android:hint="Purpose of Loan"
 
                 android:paddingLeft="@dimen/_5sdp" />
 
@@ -57,7 +57,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_30sdp"
                 android:background="@drawable/edittext_bg"
-                android:hint="Company Current Address"
+                android:hint="Office Address"
 
                 android:paddingLeft="@dimen/_5sdp" />
 
@@ -73,47 +73,6 @@
 
                 android:paddingLeft="@dimen/_5sdp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Total of Work Experience"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_14sdp"
-                android:layout_marginLeft="@dimen/_30sdp"
-                android:layout_marginTop="@dimen/_10sdp"/>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="@dimen/_30sdp"
-                android:layout_marginRight="@dimen/_30sdp"
-                android:orientation="horizontal"
-                android:weightSum="2"
-                android:layout_marginTop="@dimen/_10sdp">
-
-                <EditText
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_marginRight="@dimen/_5sdp"
-                    android:layout_weight="1"
-                    android:hint="Years"
-                    android:paddingLeft="@dimen/_5sdp"
-
-                    android:background="@drawable/edittext_bg"/>
-
-                <EditText
-                    android:layout_width="0dp"
-                    android:layout_height="@dimen/_40sdp"
-                    android:layout_marginLeft="@dimen/_5sdp"
-                    android:layout_weight="1"
-                    android:hint="Months"
-                    android:paddingLeft="@dimen/_5sdp"
-
-                    android:background="@drawable/edittext_bg"/>
-
-
-            </LinearLayout>
 
         </LinearLayout>
 

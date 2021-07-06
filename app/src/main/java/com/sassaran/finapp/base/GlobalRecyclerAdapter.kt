@@ -35,5 +35,6 @@ abstract class GlobalRecyclerAdapter<T, D>(private var mList: ArrayList<T>?) : R
             mBinding = binding as D
         }
     }
+
 }
 

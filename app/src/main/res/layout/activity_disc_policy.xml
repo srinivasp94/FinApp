@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.DiscPolicyActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disclaimer"
+        android:textColor="@color/colorprimary"
+        android:textSize="@dimen/_16sdp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_30sdp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GWI Fin App  is exclusively an information collecting application. We clearly state that we do not provide/supply any kind of loan or financial service. We , here at GWI Fin app, are focused on collecting personal and professional details of willing users, who are on the verge of taking loan of any kind  in nearby future. We assure our users of no malicious hands on their information. We aim at using the collected information, once our loan management services are active to serve our users. This application would only be restricted to users who are ready to provide consensual information, rather than a public application."
+        android:textColor="@color/black"
+        android:layout_margin="@dimen/_20sdp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/_20sdp">
+
+        <CheckBox
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:backgroundTint="@color/colorprimary"
+            android:id="@+id/policy_cb"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I agree to the terms and conditions"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proceed Further"
+        android:background="@drawable/discltxtview_bg"
+        android:paddingBottom="@dimen/_4sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingEnd="@dimen/_8sdp"
+        android:paddingStart="@dimen/_8sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/proceed_tv"/>
+
+
+</LinearLayout>
