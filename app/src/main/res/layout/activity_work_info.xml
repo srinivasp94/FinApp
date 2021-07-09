@@ -9,7 +9,8 @@
         android:background="@drawable/bgwithoutlogo"
         android:orientation="vertical">
 
-        <include layout="@layout/header_layout" />
+        <include layout="@layout/header_layout"
+            android:id="@+id/rootHeader"/>
 
         <TextView
             android:layout_width="match_parent"

@@ -27,5 +27,10 @@ class Basic_infoActivity : BaseActivity<ActivityBasicInfoBinding>() {
 
         })
 
+        binding.rootHeader.backarrowimg.setOnClickListener(View.OnClickListener {
+            finish()
+        })
+
+
     }
 }

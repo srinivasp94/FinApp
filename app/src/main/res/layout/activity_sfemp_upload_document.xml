@@ -12,7 +12,8 @@
         android:orientation="vertical"
         android:background="@drawable/bgwithoutlogo">
 
-        <include layout="@layout/header_layout"/>
+        <include layout="@layout/header_layout"
+            android:id="@+id/rootHeader"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -437,6 +438,7 @@
 
 
         <Button
+            android:id="@+id/submit_btn"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_30sdp"
             android:text="Submit"

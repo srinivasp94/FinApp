@@ -14,7 +14,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activities.AppStatusActivity"></activity>
+        <activity android:name=".Activities.LoanSelectActivity"></activity>
+        <activity android:name=".Activities.AppStatusActivity" />
         <activity android:name=".Activities.DiscPolicyActivity" />
         <activity
             android:name=".Activities.DisclaimerActivity"

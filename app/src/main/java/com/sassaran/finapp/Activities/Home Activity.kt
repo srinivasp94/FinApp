@@ -1,6 +1,7 @@
 package com.sassaran.finapp.Activities
 
 import android.content.Intent
+import android.view.MenuItem
 import android.view.View
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -13,7 +14,8 @@ import com.sassaran.finapp.databinding.ActivityHomeScreenBinding
 import com.sassaran.finapp.databinding.HomeScreenItemBinding
 
 
-class Home_Activity : BaseActivity<ActivityHomeScreenBinding>() {
+class Home_Activity : BaseActivity<ActivityHomeScreenBinding>(),
+    NavigationView.OnNavigationItemSelectedListener {
 
 
     val textnames = ArrayList<String>()
@@ -26,29 +28,32 @@ class Home_Activity : BaseActivity<ActivityHomeScreenBinding>() {
 
     override fun initialise() {
 
-        val mDrawerLayout: DrawerLayout  =  findViewById(R.id.drawer_layout)
+        val mDrawerLayout: DrawerLayout = findViewById(R.id.drawer_layout)
 
         val navigationView: NavigationView = findViewById(R.id.navigationView)
 
 
 
-       binding.imgMenuIcon.setOnClickListener(object : View.OnClickListener {
+        binding.imgMenuIcon.setOnClickListener(object : View.OnClickListener {
 
-           override fun onClick(v: View?) {
+            override fun onClick(v: View?) {
 
 
-               if (mDrawerLayout.isDrawerVisible(GravityCompat.START)) {
+                if (mDrawerLayout.isDrawerVisible(GravityCompat.START)) {
 
-                   mDrawerLayout.closeDrawer(GravityCompat.START)
+                    mDrawerLayout.closeDrawer(GravityCompat.START)
 
-               } else {
-                   mDrawerLayout.openDrawer(GravityCompat.START)
-               }
-           }
+                } else {
+                    mDrawerLayout.openDrawer(GravityCompat.START)
+                }
+            }
 
-       })
-
+        })
         navigationView.setNavigationItemSelectedListener(this)
+
+
+
+
 
         textnames.add("Sign-Out ")
         textnames.add("Apply Now ")
@@ -86,22 +91,36 @@ class Home_Activity : BaseActivity<ActivityHomeScreenBinding>() {
                         override fun onClick(v: View?) {
 
                             if (position == 0) {
-
+                                finish()
                             } else if (position == 1) {
                                 val intent = Intent(this@Home_Activity, Select_Activity::class.java)
                                 intent.putExtra("tag", "from_homeact")
                                 startActivity(intent)
 
                             } else if (position == 2) {
+                                changeActivity(
+                                    this@Home_Activity,
+                                    AppStatusActivity::class.java,
+                                    false
+                                )
+
 
                             } else if (position == 3) {
 
-                                changeActivity(this@Home_Activity, AmtEntry_Activity::class.java, false)
+                                changeActivity(
+                                    this@Home_Activity,
+                                    AmtEntry_Activity::class.java,
+                                    false
+                                )
 
                             } else if (position == 4) {
 
                             } else if (position == 5) {
-                                changeActivity(this@Home_Activity, Addresses_Activity::class.java, false)
+                                changeActivity(
+                                    this@Home_Activity,
+                                    Addresses_Activity::class.java,
+                                    false
+                                )
                             }
                         }
 
@@ -115,10 +134,19 @@ class Home_Activity : BaseActivity<ActivityHomeScreenBinding>() {
 
     }
 
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when(item?.itemId)
+            {
+                R.id.loan_ll ->{
+                    changeActivity(this,LoanSelectActivity::class.java,false)
+
+                }
+        }
+        return false
+    }
+
 
 }
 
-private fun NavigationView.setNavigationItemSelectedListener(homeActivity: Home_Activity) {
 
 
-}

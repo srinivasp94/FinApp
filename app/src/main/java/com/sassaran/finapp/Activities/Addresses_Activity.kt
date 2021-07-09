@@ -1,6 +1,7 @@
 package com.sassaran.finapp.Activities
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.sassaran.finapp.R
 import com.sassaran.finapp.base.BaseActivity
@@ -14,7 +15,9 @@ class Addresses_Activity : BaseActivity<ActivityAddressesBinding>() {
 
     override fun initialise() {
 
-//        binding.rootHeader.backarrowimg.setOnClickListener()
+        binding.rootHeader.backarrowimg.setOnClickListener(View.OnClickListener {
+            finish()
+        })
 
     }
 }

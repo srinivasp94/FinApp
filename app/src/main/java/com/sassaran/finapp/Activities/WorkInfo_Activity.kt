@@ -22,6 +22,11 @@ class WorkInfo_Activity : BaseActivity<ActivityWorkInfoBinding>() {
             changeActivity(this,Salaried_UpDoc_Activity::class.java,true);
 
         })
+        
+
+        binding.rootHeader.backarrowimg.setOnClickListener(View.OnClickListener {
+            finish()
+        })
     }
 
 }

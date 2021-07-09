@@ -23,5 +23,9 @@ class SelfEmp_workinfo_Activity : BaseActivity<ActivitySelfEmpWorkinfoBinding>()
 
         })
 
+        binding.rootHeader.backarrowimg.setOnClickListener(View.OnClickListener {
+            finish()
+        })
+
     }
 }

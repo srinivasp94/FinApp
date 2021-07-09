@@ -30,5 +30,10 @@ class PersonalInfo_Activity : BaseActivity<ActivityPersonalInfoBinding>() {
 
         })
 
+        binding.rootHeader.backarrowimg.setOnClickListener(View.OnClickListener {
+            finish()
+        })
+
+
     }
 }

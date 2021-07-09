@@ -13,11 +13,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <RelativeLayout
+            <androidx.cardview.widget.CardView
                 android:id="@+id/rlHeader"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_5sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
 
                 <androidx.appcompat.widget.AppCompatImageView
                     android:id="@+id/imgMenuIcon"
@@ -34,6 +39,8 @@
                     android:scaleType="centerInside"
                     android:src="@drawable/logo2" />
             </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -193,6 +200,7 @@
                     <ImageView
                         android:layout_width="@dimen/_15sdp"
                         android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/ic_baseline_post_add_24"
                         android:layout_gravity="center_vertical"
                         android:layout_marginLeft="@dimen/_5sdp" />
 
@@ -242,6 +250,7 @@
                         android:layout_width="@dimen/_15sdp"
                         android:layout_height="@dimen/_15sdp"
                         android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_baseline_article_24"
                         android:layout_marginLeft="@dimen/_5sdp" />
 
 

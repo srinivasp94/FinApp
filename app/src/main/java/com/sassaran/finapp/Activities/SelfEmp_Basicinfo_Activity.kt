@@ -28,5 +28,10 @@ class SelfEmp_Basicinfo_Activity : BaseActivity<ActivitySfempBasicInfoBinding>()
 
         })
 
+        binding.rootHeader.backarrowimg.setOnClickListener(View.OnClickListener {
+            finish()
+        })
+
+
     }
 }

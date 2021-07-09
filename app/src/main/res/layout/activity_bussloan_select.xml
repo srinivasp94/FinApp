@@ -3,7 +3,18 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-<ScrollView
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_5sdp"
+        >
+
+    <include layout="@layout/header_layout"
+        android:id="@+id/rootHeader"/>
+
+    <ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -11,10 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_margin="@dimen/_5sdp"
         android:background="@drawable/bgwithoutlogo">
 
-        <include layout="@layout/header_layout"/>
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
@@ -23,6 +32,7 @@
             android:layout_margin="@dimen/_5sdp">
 
             <LinearLayout
+                android:id="@+id/termloan_ll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/_12sdp"
@@ -56,6 +66,7 @@
             android:layout_margin="@dimen/_5sdp">
 
             <LinearLayout
+                android:id="@+id/contfin_ll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/_12sdp"
@@ -89,6 +100,7 @@
             android:layout_margin="@dimen/_5sdp">
 
             <LinearLayout
+                android:id="@+id/vehfin_ll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/_12sdp"
@@ -122,6 +134,7 @@
             android:layout_margin="@dimen/_5sdp">
 
             <LinearLayout
+                android:id="@+id/agrifin_ll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/_12sdp"
@@ -155,6 +168,7 @@
             android:layout_margin="@dimen/_5sdp">
 
             <LinearLayout
+                android:id="@+id/devfin_ll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/_12sdp"
@@ -190,6 +204,7 @@
             android:layout_margin="@dimen/_5sdp">
 
             <LinearLayout
+                android:id="@+id/propfin_ll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/_12sdp"
@@ -224,6 +239,7 @@
             android:layout_margin="@dimen/_5sdp">
 
             <LinearLayout
+                android:id="@+id/comfin_ll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/_12sdp"
@@ -259,6 +275,7 @@
             android:layout_margin="@dimen/_5sdp">
 
             <LinearLayout
+                android:id="@+id/merchcredit_ll"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="@dimen/_12sdp"
@@ -290,4 +307,6 @@
     </LinearLayout>
 
 </ScrollView>
+
+    </LinearLayout>
 </layout>

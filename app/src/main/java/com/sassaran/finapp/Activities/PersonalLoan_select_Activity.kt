@@ -26,6 +26,9 @@ class PersonalLoan_select_Activity : BaseActivity<ActivityPersonalloanSelectBind
         binding.debitLl.setOnClickListener(this)
         binding.merchcreditLl.setOnClickListener(this)
 
+        binding.rootHeader.backarrowimg.setOnClickListener(View.OnClickListener {
+            finish()
+        })
 
 
     }

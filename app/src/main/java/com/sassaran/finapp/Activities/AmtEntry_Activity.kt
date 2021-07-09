@@ -1,6 +1,7 @@
 package com.sassaran.finapp.Activities
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.sassaran.finapp.R
 import com.sassaran.finapp.base.BaseActivity
@@ -13,6 +14,16 @@ class AmtEntry_Activity: BaseActivity<ActivityAmtEntryBinding>() {
     }
 
     override fun initialise() {
+
+        binding.proceedBtn.setOnClickListener(View.OnClickListener {
+
+            changeActivity(this,Home_Activity::class.java,true);
+
+        })
+
+        binding.rootHeader.backarrowimg.setOnClickListener(View.OnClickListener {
+            finish()
+        })
 
     }
 
